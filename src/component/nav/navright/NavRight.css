@@ -1,0 +1,14 @@
+.book-demo button {
+  background-color: #d32f2f; /* red color */
+  color: white;              /* text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 80PX;
+  cursor: pointer;
+   background: linear-gradient(to right, rgb(182, 50, 50),#ff0000);
+}
+
+.book-demo button:hover{
+   
+   background: linear-gradient(to right,#ff0000,rgb(182, 50, 50));
+}

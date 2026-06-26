@@ -1,8 +1,11 @@
 import React from 'react'
+import './NavRight.css'
 
 function NavRight() {
   return (
-    <div>NavRight</div>
+    <div className='book-demo'>
+      <button >BOOK A DEMO</button>
+    </div>
   )
 }
 
