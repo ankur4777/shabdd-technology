@@ -56,7 +56,7 @@ function Poster() {
 
         <div className="poster-actions">
           <a className="poster-primary" href="/services/web-development">
-            Our Services
+            Get Started
           </a>
           <a className="poster-secondary" href="/about">
             Learn More

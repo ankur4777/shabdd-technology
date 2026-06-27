@@ -1,16 +1,32 @@
-.nav-main{
+.nav-main {
+    width: min(100% - 32px, 1320px);
+    min-height: 66px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px;
+    gap: 24px;
+    padding: 8px clamp(18px, 4vw, 60px);
+    margin: 20px auto 0;
     background: #ffffff;
     position: relative;
-    z-index: 1;
-    
-    margin-top: 20px;
+    z-index: 20;
     border-radius: 20px;
-    height: 66PX;
-
+    box-sizing: border-box;
 }
 
+@media (max-width: 900px) {
+    .nav-main {
+        flex-wrap: wrap;
+        row-gap: 14px;
+    }
+}
+
+@media (max-width: 560px) {
+    .nav-main {
+        width: min(100% - 20px, 1320px);
+        justify-content: center;
+        padding: 12px;
+        border-radius: 14px;
+    }
+}
 

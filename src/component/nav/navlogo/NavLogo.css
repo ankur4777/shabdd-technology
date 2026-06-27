@@ -1,3 +1,17 @@
-.nav-logo img{
-    height:50PX;
+.nav-logo {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.nav-logo img {
+    width: clamp(92px, 12vw, 118px);
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 560px) {
+    .nav-logo img {
+        width: 88px;
+    }
 }
