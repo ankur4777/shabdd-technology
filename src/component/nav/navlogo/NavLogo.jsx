@@ -3,7 +3,7 @@ import "./NavLogo.css"
 function NavLogo() {
   return (
     <div className="nav-logo">
-      <img src="logo.png" alt="Logo" />
+      <img src="/Logo.png" alt="Logo" />
     </div>
   );
 }
