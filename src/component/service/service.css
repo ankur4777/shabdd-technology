@@ -1,0 +1,43 @@
+.services {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; /* centers items */
+}
+
+.container {
+  display: flex;                 /* make container a flexbox */
+  flex-direction: column;        /* stack children vertically */
+  box-shadow: 0px 0px 15px 0px black;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 300px;               /* grow, shrink, basis */
+  max-width: 400px;
+  height: 279px;
+  transition: transform 0.3s ease;
+}
+
+.container img {
+ 
+  height: 100px;
+  max-width: 150px; 
+  object-fit: contain; /* maintain aspect ratio */
+ 
+  display: block;
+  margin: 0 auto; /* centers image */
+}
+
+p {
+  text-align: justify;
+}
+
+.learn {
+  align-self: flex-start;   /* align to left side */
+  color: blue;
+  font-weight: bold;
+  margin-top: auto;         /* push it to the bottom */
+}
+
+.container:hover {
+  transform: scale(0.95);   /* shrink to 95% size */
+}
