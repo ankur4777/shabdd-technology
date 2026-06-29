@@ -10,7 +10,12 @@ if (!componentName) {
 const folderPath = path.join("src", "component", componentName);
 fs.mkdirSync(folderPath, { recursive: true });
 
-const jsxContent = `import './${componentName}.css';
+// Capitalized JSX file name
+const jsxFileName = `${componentName.charAt(0).toUpperCase() + componentName.slice(1)}.jsx`;
+// Lowercase CSS file name
+const cssFileName = `${componentName.toLowerCase()}.css`;
+
+const jsxContent = `import './${cssFileName}';
 
 function ${componentName}() {
   return (
@@ -27,7 +32,7 @@ const cssContent = `.${componentName.toLowerCase()} {
   /* Add your styles here */
 }`;
 
-fs.writeFileSync(path.join(folderPath, `${componentName}.jsx`), jsxContent);
-fs.writeFileSync(path.join(folderPath, `${componentName}.css`), cssContent);
+fs.writeFileSync(path.join(folderPath, jsxFileName), jsxContent);
+fs.writeFileSync(path.join(folderPath, cssFileName), cssContent);
 
-console.log(`✅ ${componentName}.jsx and ${componentName}.css created successfully!`);
+console.log(`✅ ${jsxFileName} and ${cssFileName} created successfully!`);

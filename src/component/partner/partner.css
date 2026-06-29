@@ -1,21 +1,138 @@
-.partner{
+.partner {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+ margin: 20px 0px;
+  overflow: hidden;
+  
+
 }
 
 
-.partner img{
-      width: 100%;
-    height: 250px;
-}
-
-.partner-content{
+.partner-bg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content:space-between;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
+
+
+
+.partner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.partner-content {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 1180px);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.partner-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.partner-logo img {
+  width: clamp(110px, 16vw, 220px);
+  height: auto;
+  max-height: 130px;
+  object-fit: contain;
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .partner-logo {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .partner-logo img {
+    width: clamp(110px, 11vw, 155px);
+    max-height: 110px;
+  }
+
+  .partner-text {
+    flex: 0 0 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partner-bg {
+    height: 100%;
+  }
+}
+
+.partner-text {
+  flex: 0 1 400px;
+  text-align: left;
+}
+
+.partner-text h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.12;
+}
+
+@media (max-width: 900px) {
+  .partner {
+    min-height: 360px;
+    padding: 40px 18px;
+  }
+
+  .partner-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    gap: 26px;
+  }
+
+  .partner-text {
+    flex: unset;
+    text-align: center;
+  }
+
+  .partner-logo img {
+    width: clamp(95px, 28vw, 160px);
+    max-height: 105px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner {
+    min-height: 420px;
+    padding: 36px 14px;
+  }
+
+  .partner-content {
+    gap: 22px;
+  }
+
+  .partner-logo {
+    gap: 14px;
+  }
+
+  .partner-logo img {
+    width: min(42vw, 135px);
+    max-height: 90px;
+  }
+}
+
+

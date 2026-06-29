@@ -1,0 +1,109 @@
+.reviews {
+  padding: 60px 20px;
+
+}
+
+.reviews-heading h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+.reviews-heading p{
+  text-align: center;
+
+  
+}
+.reviews-heading h2 span {
+  color: #d32f2f; /* red highlight for "Client's" */
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.review-card {
+  background: #111111;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, #000000, #d32f2f) 1;
+  border-radius: 30px;
+  padding: 20px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white;
+
+  /* Add these two lines 👇 */
+  -webkit-border-image: linear-gradient(to right, #000000, #d32f2f) 1;
+  overflow: hidden; /* ensures corners clip correctly */
+}
+
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #d32f2f;
+}
+
+.quote-mark {
+  font-size: 3rem;
+  color: #d32f2f;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.review-text {
+  font-size: 1rem;
+  margin: 40px 0 20px;
+  line-height: 1.5;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.review-avatar {
+  background: #d32f2f;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-author h3 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.review-author p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.reviews-button {
+  display: block;
+  margin: 40px auto 0;
+  padding: 12px 24px;
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reviews-button:hover {
+  background: #ff4444;
+}
+
+
