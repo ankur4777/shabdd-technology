@@ -3,7 +3,7 @@ import './reviews.css';
 function Reviews() {
   const reviews = [
     {
-      text: '“Shabdd Technology exceeded our expectations with their top-notch web development services. The team was responsive, professional, and delivered a user-friendly website that perfectly matches our business needs. Their digital marketing strategies have also helped us increase traffic and leads significantly.”',
+      text: 'Shabdd Technology exceeded our expectations with their top-notch web development services. The team was professional and responsive. Highly recommended.',
       name: 'Raman Makkar',
       role: 'Client',
       initials: 'RM',
@@ -18,10 +18,7 @@ function Reviews() {
 
   return (
     <section className="reviews">
-      <div
-        className="reviews-panel"
-        // style={{ backgroundImage: 'url("/PrtnerBackground.png")' }}
-      >
+      <div className="reviews-panel">
         <div className="reviews-heading">
           <h2>
             Our <span>Client&apos;s</span> Reviews
@@ -30,10 +27,6 @@ function Reviews() {
             Discover why businesses trust SHABDD Technology to elevate their
             digital presence and deliver outstanding results.
           </p>
-        </div>
-
-        <div className="line"> 
-
         </div>
 
         <div className="reviews-grid">
