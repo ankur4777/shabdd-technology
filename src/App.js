@@ -5,6 +5,7 @@ import Poster from './component/poster/Poster';
 import Services from './component/service/Services';
 import Partner from './component/partner/partner.jsx';
 import Reviews from './component/reviews/Reviews';
+import Blog from './component/blog/Blog.jsx';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <Partner />
       <Reviews />
+      <Blog/>
       
     </div>
   );
