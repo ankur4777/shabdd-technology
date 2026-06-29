@@ -5,7 +5,8 @@ import Poster from './component/poster/Poster';
 import Services from './component/service/Services';
 import Partner from './component/partner/partner.jsx';
 import Reviews from './component/reviews/Reviews';
-import Blog from './component/blog/Blog.jsx';
+import Blog from './component/blog/Blog';
+import OtherServices from './component/otherServices/OtherServices';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Partner />
       <Reviews />
       <Blog/>
+      <OtherServices />
       
     </div>
   );
