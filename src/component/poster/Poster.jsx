@@ -1,14 +1,9 @@
-import React from 'react';
 import { HiArrowRight } from 'react-icons/hi';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import './Poster.css';
 
 function Poster() {
-
-  const words = [
-   "presence",
-   "Business "
-  ]
+  const words = useMemo(() => ['presence', 'Business '], []);
 
   const [index, setIndex]=useState(0);
   const [displayText, setDisplayText] = useState("");
