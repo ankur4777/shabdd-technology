@@ -10,17 +10,25 @@ function OtherServices()
     {image:"other_services/4.png", Title:"Graphic Designing"}
   ];
 
+  const services = [...otherServices, ...otherServices];
+
   return (
     <div className="otherservices">
-        <h1>Other <span style={{ color: "red" }}>Services</span></h1> 
-        <p style={{textAlign: "center"}}>Build a powerful digital presence with tailored solutions that captivate visitors and convert them into loyal customers.</p>
-      <div >
-        {otherServices.map((e,index)=>(
-          <div key={index}>
-            <img src={e.image} alt={e.Title} />
-            <h3>{e.Title}</h3>
-          </div>
-        ))}
+      <div className="otherservices-heading">
+        <h1>Other <span>Services</span></h1>
+        <p>Build a powerful digital presence with tailored solutions that captivate visitors and convert them into loyal customers.</p>
+      </div>
+      <div className="otherservice-container">
+        <div className="otherservice-track">
+          {services.map((e,index)=>(
+            <div className="service-card" key={`${e.Title}-${index}`}>
+              <div className="service-icon-wrap">
+                <img src={e.image} alt={e.Title} />
+              </div>
+              <h3>{e.Title}</h3>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
