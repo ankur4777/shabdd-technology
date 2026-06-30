@@ -7,9 +7,12 @@ import Partner from './component/partner/partner.jsx';
 import Reviews from './component/reviews/Reviews';
 import Blog from './component/blog/Blog';
 import OtherServices from './component/otherServices/OtherServices';
+import Footer from './component/footer/Footer';
 
 function App() {
   return (
+
+    <>
     <div className="App">
       
       <NavMain />
@@ -21,6 +24,8 @@ function App() {
       <OtherServices />
       
     </div>
+    <Footer />
+    </>
   );
 }
 
