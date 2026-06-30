@@ -167,11 +167,11 @@
 
 @media (max-width: 520px) {
   .reviews {
-    padding: 28px 12px;
+    padding: 28px 10px;
   }
 
   .reviews-panel {
-    padding: 38px 14px 30px;
+    padding: 34px 0 30px;
   }
 
   .review-card {
@@ -191,5 +191,16 @@
 
   .review-text {
     margin-top: 48px;
+    max-width: none;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .reviews-heading h2 {
+    font-size: 30px;
+  }
+
+  .reviews-heading p {
+    font-size: 14px;
   }
 }

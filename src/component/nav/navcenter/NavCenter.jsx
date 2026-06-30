@@ -14,11 +14,11 @@ const services = [
   { label: 'YOUTUBE ADS', path: '/services/youtube-ads' },
 ];
 
-function NavCenter() {
+function NavCenter({ isOpen = false, onNavigate }) {
   return (
-    <div className="nav-center">
-      <Link className="nav-link" to="/">HOME</Link>
-      <Link className="nav-link" to="/about">ABOUT US</Link>
+    <div className={`nav-center ${isOpen ? 'nav-center-open' : ''}`}>
+      <Link className="nav-link" to="/" onClick={onNavigate}>HOME</Link>
+      <Link className="nav-link" to="/about" onClick={onNavigate}>ABOUT US</Link>
 
       <div className="nav-dropdown">
         <button className="nav-link nav-dropdown-button" type="button">
@@ -29,14 +29,14 @@ function NavCenter() {
 
         <div className="dropdown-menu">
           {services.map((service) => (
-            <Link className="dropdown-link" to={service.path} key={service.path}>
+            <Link className="dropdown-link" to={service.path} key={service.path} onClick={onNavigate}>
               {service.label}
             </Link>
           ))}
         </div>
       </div>
 
-      <Link className="nav-link" to="/contact">CONTACT US</Link>
+      <Link className="nav-link" to="/contact" onClick={onNavigate}>CONTACT US</Link>
     </div>
   );
 }

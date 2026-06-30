@@ -1,7 +1,7 @@
 
 .footer {
     background: #080808;
-   
+    padding: 0 24px 28px;
     color: #c4c4c4;
     font-family: 'Manrope', sans-serif;
 }
@@ -18,7 +18,7 @@
 
 .footer-brand img {
 
-    max-width: 270px;
+    width: min(270px, 80vw);
     display: block;
     margin-top: 38px;
     margin-bottom: 16px;
@@ -149,16 +149,43 @@
 }
 
 @media (max-width: 700px) {
+    .footer {
+        padding: 0 16px 24px;
+    }
+
     .footer-container {
         grid-template-columns: 1fr;
+        gap: 8px;
     }
 
     .footer-bottom {
         justify-content: center;
         text-align: center;
+        margin-top: 26px;
     }
 
     .footer-bottom-right {
         justify-content: center;
+    }
+
+    .footer-brand img {
+        margin: 28px auto 16px;
+    }
+
+    .footer-brand,
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-top: 12px;
+    }
+
+    .footer-payment {
+        justify-content: center;
+    }
+
+    .footer-payment img {
+        height: 28px;
     }
 }

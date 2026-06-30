@@ -1,14 +1,31 @@
 .book-demo button {
-  background-color: #d32f2f; /* red color */
-  color: white;              /* text color */
+  background-color: #d32f2f;
+  color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 80PX;
+  padding: 12px 24px;
+  border-radius: 999px;
   cursor: pointer;
-   background: linear-gradient(to right, rgb(182, 50, 50),#ff0000);
+  background: linear-gradient(135deg, #c72735, #ff0808);
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 12px 26px rgba(255, 8, 8, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .book-demo button:hover{
-   
-   background: linear-gradient(to right,#ff0000,rgb(182, 50, 50));
+   background: linear-gradient(135deg, #ff0808, #b63232);
+   transform: translateY(-2px);
+   box-shadow: 0 16px 30px rgba(255, 8, 8, 0.28);
+}
+
+.book-demo {
+  justify-self: end;
+}
+
+@media (max-width: 560px) {
+  .book-demo button {
+    padding: 10px 13px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
 }

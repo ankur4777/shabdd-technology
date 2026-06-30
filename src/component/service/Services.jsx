@@ -20,7 +20,7 @@ function Services() {
       <h5 style={{color: 'gray'}}>At Shabdd Technologies, we don't just offer services; we deliver expert-driven solutions designed to empower your business. Explore the unique advantages we bring to the table:</h5>
       <div className='services'>
         {services.map((e) => (
-          <Link className="dropdown-link" to={e.path} key={e.path}>
+          <Link className="service-link" to={e.path} key={e.path}>
             {<div className='container'>
               <img src={e.image} alt="" />
               <h3>{e.lable}</h3>

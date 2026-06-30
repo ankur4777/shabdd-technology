@@ -183,14 +183,20 @@
   .poster {
     padding: 38px 20px 48px;
     gap: 18px;
+    min-height: auto;
   }
 
   .poster h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .poster p {
-    font-size: 16px;
+    font-size: 15px;
+  }
+
+  .poster-kicker {
+    font-size: 14px;
+    letter-spacing: 0.08em;
   }
 
   .poster-actions {
@@ -209,6 +215,24 @@
   }
 
   .poster-visual img {
-    height: 350px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 400px) {
+  .poster {
+    padding-inline: 14px;
+  }
+
+  .poster h1 {
+    font-size: 29px;
+  }
+
+  .poster-visual {
+    min-height: 280px;
+  }
+
+  .poster-visual img {
+    height: 290px;
   }
 }

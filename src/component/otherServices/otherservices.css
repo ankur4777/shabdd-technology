@@ -114,10 +114,30 @@
 
 @media (max-width: 768px) {
   .otherservices {
-    padding: 70px 14px 80px;
+    padding: 54px 12px 64px;
+  }
+
+  .otherservices p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .otherservice-container::before,
+  .otherservice-container::after {
+    width: 34px;
   }
 
   .service-card {
-    flex-basis: min(82vw, 220px);
+    flex-basis: min(74vw, 210px);
+    padding: 14px 12px;
+    border-radius: 14px;
+  }
+
+  .service-icon-wrap {
+    min-height: 130px;
+  }
+
+  .otherservice-track {
+    gap: 16px;
   }
 }
