@@ -50,9 +50,11 @@ function Middle() {
           <p>
             At Shabdd Technologies, we <span>turn vision into reality.</span>
           </p>
+          
+          <p>At Shabdd Technologies, we are dedicated to delivering IT solutions that help businesses thrive in an ever-evolving digital landscape. With a focus on app development, lead generation, social media marketing, and SEO management, we provide comprehensive services that cater to your unique business needs.</p>
+        
         </div>
-
-        <div className="middle-left-visual">
+      <div className="middle-left-visual">
           <img
             className="middle-growth-image"
             src="/about/image-4.png"

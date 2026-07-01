@@ -67,8 +67,11 @@
         .middle-copy p {
           margin: 0;
           color: #4f5261;
-          font-size: clamp(15px, 1.8vw, 22px);
+          font-size: clamp(15px, 1.8vw, 18px);
           line-height: 1.55;
+          text-align: justify;
+          margin-top:20px;
+         
         }
 
         .middle-copy p span {
@@ -603,7 +606,7 @@
 
         @media (max-width: 420px) {
           .middle-copy h2 {
-            font-size: 32px;
+            font-size: 50px;
           }
 
           .middle-left-visual {
