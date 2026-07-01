@@ -1,6 +1,6 @@
 .allservices-banner img{
     width: 100%;
-    height:300px;
+    height:350px;
     
 }
 
@@ -8,6 +8,12 @@
     position:relative;
 }
 
-.allservices-banner-text{
-    position:absolute
+.allservices-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: white;
 }
