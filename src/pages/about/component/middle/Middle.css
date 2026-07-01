@@ -535,8 +535,29 @@
 
           .middle-left-visual {
             order: 2;
-            justify-content: flex-start;
-            padding-left: 0;
+            width: 100%;
+            max-width: 680px;
+            margin: 0 auto;
+            justify-content: center;
+            padding: 22px 0 190px;
+            overflow: visible;
+          }
+
+          .middle-growth-image {
+            width: min(58vw, 420px);
+          }
+
+          .middle-engagement {
+            top: 34px;
+            right: clamp(12px, 6vw, 58px);
+            min-width: 220px;
+          }
+
+          .middle-sales-card {
+            left: auto;
+            right: clamp(12px, 6vw, 58px);
+            bottom: 16px;
+            width: min(320px, calc(100% - 48px));
           }
 
           .middle-right-visual {
@@ -549,6 +570,25 @@
         }
 
         @media (max-width: 720px) {
+          .middle-left-visual {
+            max-width: 430px;
+            padding-bottom: 178px;
+          }
+
+          .middle-growth-image {
+            width: min(72vw, 340px);
+          }
+
+          .middle-engagement {
+            right: 0;
+            min-width: 202px;
+          }
+
+          .middle-sales-card {
+            right: 0;
+            width: min(260px, calc(100% - 34px));
+          }
+
           .middle-card-grid {
             grid-template-columns: 1fr;
           }
@@ -584,6 +624,19 @@
         @media (max-width: 560px) {
           .middle-trusted-section {
             padding-inline: 14px;
+          }
+
+          .middle-left-visual {
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+            padding: 18px 0 178px;
+            justify-content: center;
+          }
+
+          .middle-growth-image {
+            width: min(78vw, 310px);
+            max-width: 100%;
           }
 
           .middle-social-card {
@@ -626,21 +679,21 @@
             height: 45px;
           }
 
-          .middle-left-visual {
-            padding: 14px 0 30px;
-          }
-
           .middle-engagement {
-            top: 30px;
+            top: 26px;
             right: 0;
-            min-width: 202px;
+            width: min(204px, calc(100% - 24px));
+            min-width: 0;
             gap: 12px;
             padding: 13px 16px;
             border-width: 8px;
           }
 
           .middle-sales-card {
-            width: min(270px, calc(100% - 42px));
+            left: auto;
+            right: 0;
+            bottom: 20px;
+            width: min(230px, calc(100% - 40px));
             padding: 18px;
           }
         }
@@ -651,11 +704,19 @@
           }
 
           .middle-left-visual {
-            padding-bottom: 24px;
+            max-width: 330px;
+            padding-bottom: 166px;
+          }
+
+          .middle-growth-image {
+            width: min(76vw, 285px);
           }
 
           .middle-engagement {
-            min-width: 172px;
+            top: 18px;
+            width: min(176px, calc(100% - 20px));
+            padding: 10px 12px;
+            border-width: 7px;
           }
 
           .middle-engagement strong {
@@ -667,7 +728,13 @@
           }
 
           .middle-sales-card {
-            width: min(245px, calc(100% - 24px));
-            padding: 16px;
+            bottom: 14px;
+            width: min(205px, calc(100% - 26px));
+            padding: 14px;
+            border-radius: 20px;
+          }
+
+          .middle-chart {
+            height: 86px;
           }
         }

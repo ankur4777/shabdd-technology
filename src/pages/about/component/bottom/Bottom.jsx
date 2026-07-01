@@ -15,26 +15,54 @@ function Bottom() {
         }
     ]
 
+    const progress = [
+        {
+            label: 'Social Media Branding',
+            value: '98%',
+            width: '98',
+        },
+        {
+            label: 'Secure & Success Rate',
+            value: '92%',
+            width: '92',
+        },
+    ]
+
     return (
-        <div>
-            <div className="about-container-bottom">
+        <section className="about-container-bottom">
+            <div className="about-bottom-inner">
                 <div className="about-container-bottom-item">
                     {data.map((item, index) => (
-                    
-                        <div key={index}>
+                        <article className="about-bottom-card" key={index}>
                             <img src={item.path} alt="" />
                             <h3>{item.h3}</h3>
                             <p>{item.p}</p>
-                        </div>
+                        </article>
                     ))}
                 </div>
 
-                <div>
-                    <h1>Empowering Your Social Media Presence</h1>
-                    <p>Shabdd Technologies provides strategic solutions that amplify your brand’s voice and engage your audience effectively.</p>
+                <div className="about-bottom-content">
+                    <h1>
+                        Empowering <span>Your Social Media</span> Presence
+                    </h1>
+                    <p>Shabdd Technologies provides strategic solutions that amplify your brand's voice and engage your audience effectively.</p>
+
+                    <div className="about-bottom-progress-list">
+                        {progress.map((item) => (
+                            <div className="about-bottom-progress" key={item.label}>
+                                <div className="about-bottom-progress-top">
+                                    <strong>{item.label}</strong>
+                                    <span>{item.value}</span>
+                                </div>
+                                <div className="about-bottom-progress-track">
+                                    <span style={{ '--progress-width': `${item.width}%` }} />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
