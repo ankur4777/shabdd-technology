@@ -1,0 +1,13 @@
+.about-container-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.about-container-bottom-item{
+    display:flex;
+    max-width:1200px
+
+}

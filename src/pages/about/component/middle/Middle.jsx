@@ -164,8 +164,8 @@ function Middle() {
       </div>
 
       <div className="middle-testimonial">
-        <div className="middle-avatar" aria-hidden="true" />
-        <div>
+        <img src="/Manager/OIP.jfif" alt="" />
+        <div className="middle-testimonial-content">
           <h4>Pardeep Bhatia</h4>
           <p>SR. PROJECT MANAGER</p>
           <div className="middle-stars" aria-label="Five star rating">
