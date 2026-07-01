@@ -5,7 +5,7 @@ import Home from './component/home/Home';
 import Footer from './component/footer/Footer';
 import {Routes,Route} from 'react-router-dom';
 import About from './pages/about/About';
-
+import WebDevelopment from './pages/AllServices/webdevelopment/WebDevelopment';
 function App() {
   return (
 
@@ -14,8 +14,10 @@ function App() {
       
       <NavMain />
       <Routes>
+
       <Route path="/" element={ <Home/>}/>
       <Route path="/about" element={ <About/>}/>
+      <Route path="services/web-development" element={ <WebDevelopment/>}/>
       </Routes>
      
       

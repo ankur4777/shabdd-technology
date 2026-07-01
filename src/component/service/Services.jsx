@@ -13,6 +13,50 @@ function Services() {
     { lable: "Graphic Designing", path: '/services/graphic-designing', image: "/background/Graphic designer.png", description: "Transform your digital presence into a modern, user-friendly experience that captivates visitors and breathes new life into your business." },
     { lable: "Youtube ADS", path: '/services/youtube-ads', image: "/background/Youtub Ads (2).png", description: "We specialize in every YouTube ad format to align with your marketing goals – whether it’s brand awareness, engagement, or direct conversions." }
   ]
+
+
+  // servicesData.js
+const servicesData = {
+  webDevelopment: {
+
+    title: "Build Fast, Secure, and Stunning Websites",
+    subtitle:"Websites That Truly Stand Out",
+    description: "Make unforgettable impressions with purpose-built websites that are visually appealing, effortless to navigate, and simple to manage. Our websites Improve engagement and satisfaction through responsive, user-friendly designs, while you enjoy an edge over competitors."
+  },
+  webApplication: {
+    title: "Next Gen Web Applications",
+    subtitle:"Web Application Development Services",
+    description: "We build high-performance web applications that work smarter, scale effortlessly, and deliver real value. Whether you're automating workflows, integrating AI, or launching a next-gen SaaS, we turn your vision into reality."
+  },
+  digitalMarketing: {
+    title: "Drive Engagement and Conversions",
+    subtitle:"Get Qualified Enrollments Leads with shabdd innovations",
+    description:"Increase your online visibility and boost your student enrollments with proven and tested digital marketing strategies."
+  },
+  seo: {
+    title: "SEO Management",
+    subtitle:"",
+    description: ""
+  },
+   metaAds: {
+    title: "Facebook, Instagram & WhatsApp Advertising",
+    subtitle:"Turn Clicks Into Customers with Meta Ads",
+    description: "Unleash the full potential of Facebook & Instagram Ads with precision targeting, engaging creatives, and AI-driven optimization. We design high-converting ad campaigns that increase brand visibility, drive traffic, and boost ROI."
+  },
+   seo: {
+    title: "Transform Your Brand with Stunning Graphic Design",
+    subtitle:"Creative Designs to Captivate, Engage, and Inspire Your Audience",
+    description: "Create your digital presence with intuitive graphics, engaging visuals, and user-centric experiences, crafted to drive engagement and conversion."
+  },
+   YoutubeADS: {
+    title: "Engage, Convert, Scale with Video",
+    subtitle:"Drive Results YouTube Ads Marketing",
+    description: "Capture attention, drive conversions, and maximize brand visibility with YouTube ad campaigns. We leverage AI-driven insights, strategic targeting, and creative storytelling to deliver high-performing video ads that generate measurable business results."
+  },
+};
+
+
+
   return (
     <div className="root">
       <h3>Our Service</h3>

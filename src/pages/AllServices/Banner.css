@@ -1,0 +1,13 @@
+.allservices-banner img{
+    width: 100%;
+    height:300px;
+    
+}
+
+.allservices-banner{
+    position:relative;
+}
+
+.allservices-banner-text{
+    position:absolute
+}
