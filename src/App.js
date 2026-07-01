@@ -1,13 +1,9 @@
 
 import './App.css';
 import NavMain from './component/nav/navmain/NavMain';
-import Poster from './component/poster/Poster';
-import Services from './component/service/Services';
-import Partner from './component/partner/partner.jsx';
-import Reviews from './component/reviews/Reviews';
-import Blog from './component/blog/Blog';
-import OtherServices from './component/otherServices/OtherServices';
+import Home from './component/home/Home';
 import Footer from './component/footer/Footer';
+// import {Routes,Route} from 'react-router-dom';
 
 function App() {
   return (
@@ -16,12 +12,7 @@ function App() {
     <div className="App">
       
       <NavMain />
-      <Poster />
-      <Services />
-      <Partner />
-      <Reviews />
-      <Blog/>
-      <OtherServices />
+      <Home/>
       
     </div>
     <Footer />

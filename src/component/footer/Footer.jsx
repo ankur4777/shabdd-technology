@@ -44,12 +44,12 @@ function Footer() {
                 <div>© 2026 <span><Link to="">Shabdd Innovations. </Link></span> All rights reserved.</div>
                 <div className="footer-bottom-right">
                     <div className="footer-payment">
-                        <Link to="/"><img src="/Payment\amazon-pay.png" /></Link>
-                        <Link to="/"><img src="/Payment/mastercard.png" /></Link>
-                        <Link to="/"><img src="/Payment/paypal.png" /></Link>
-                        <Link to="/"><img src="/Payment/razorpay.png" /></Link>
-                        <Link to="/"><img src="/Payment/shop-pay.png" /></Link>
-                         <Link to="/"><img src="/Payment/stripe.png" /></Link>
+                        <Link to="/"><img src="/Payment/amazon-pay.png" alt="Amazon Pay" /></Link>
+                        <Link to="/"><img src="/Payment/mastercard.png" alt="Mastercard" /></Link>
+                        <Link to="/"><img src="/Payment/paypal.png" alt="PayPal" /></Link>
+                        <Link to="/"><img src="/Payment/razorpay.png" alt="Razorpay" /></Link>
+                        <Link to="/"><img src="/Payment/shop-pay.png" alt="Shop Pay" /></Link>
+                         <Link to="/"><img src="/Payment/stripe.png" alt="Stripe" /></Link>
                     </div>
                   
                 </div>
