@@ -1,15 +1,15 @@
 import React from 'react'
 import './Banner.css'
 
-function Banner({title, subtitle, description}) {
+function Banner({ title, subtitle, description }) {
   return (
     <div>
       <div className="allservices-banner">
-        <img src="/allservices/Banner-all.png"/>
+        <img src="/allservices/Banner-all.png" alt="Banner background" />
         <div className="allservices-banner-text">
-            <h4>{title}</h4>
-            <h1>{subtitle}</h1>
-            <p>{description}</p>
+          <h4>{subtitle}</h4>
+          <h1>{title}</h1>
+          <p>{description}</p>
         </div>
       </div>
     </div>
