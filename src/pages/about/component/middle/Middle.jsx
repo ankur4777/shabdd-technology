@@ -41,18 +41,24 @@ function Middle() {
     <section className="middle-trusted-section">
       <div className="middle-hero-grid">
         <div className="middle-copy">
-          <h2>
-            Your <span>Trusted</span> Partner
-            <br />
-            in Digital Solutions
-          </h2>
-          <div className="middle-title-line" />
-          <p>
-            At Shabdd Technologies, we <span>turn vision into reality.</span>
+          <div className="middle-copy-main">
+            <h2>
+              Your <span>Trusted</span> Partner
+              <br />
+              in Digital Solutions
+            </h2>
+            <div className="middle-title-line" />
+            <p>
+              At Shabdd Technologies, we <span>turn vision into reality.</span>
+            </p>
+          </div>
+
+          <p className="middle-copy-detail">
+            At Shabdd Technologies, we are dedicated to delivering IT solutions that help businesses thrive in an ever-evolving digital landscape. With a focus on app development, lead generation, social media marketing, and SEO management, we provide comprehensive services that cater to your unique business needs.
+            With expertise and a client-centric approach, Shabdd Technologies transforms ideas into powerful digital
+            solutions. Whether you need a custom app, effective lead generation strategies, or a robust online presence,
+            we are here to make it happen.
           </p>
-          
-          <p>At Shabdd Technologies, we are dedicated to delivering IT solutions that help businesses thrive in an ever-evolving digital landscape. With a focus on app development, lead generation, social media marketing, and SEO management, we provide comprehensive services that cater to your unique business needs.</p>
-        
         </div>
       <div className="middle-left-visual">
           <img

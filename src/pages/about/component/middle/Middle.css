@@ -40,11 +40,18 @@
 
         .middle-copy {
           grid-column: 1 / -1;
-          max-width: 650px;
+          display: grid;
+          grid-template-columns: minmax(360px, 0.95fr) minmax(300px, 0.8fr);
+          gap: clamp(30px, 6vw, 88px);
+          align-items: end;
         }
 
-        .middle-copy h2 {
-          width: min(100%, 610px);
+        .middle-copy-main {
+          min-width: 0;
+        }
+
+        .middle-copy-main h2 {
+          width: min(610px);
           margin: 0;
           color: #2b2d40;
           font-size: clamp(34px, 5vw, 62px);
@@ -53,7 +60,7 @@
           letter-spacing: 0;
         }
 
-        .middle-copy h2 span {
+        .middle-copy-main h2 span {
           color: #df2028;
         }
 
@@ -76,6 +83,11 @@
 
         .middle-copy p span {
           color: #df2028;
+        }
+
+        .middle-copy-detail {
+          max-width: 610px;
+          padding-bottom: 8px;
         }
 
         .middle-left-visual {
@@ -491,6 +503,13 @@
 
           .middle-copy {
             grid-column: auto;
+            grid-template-columns: 1fr;
+            gap: 0;
+          }
+
+          .middle-copy-detail {
+            max-width: 760px;
+            padding-bottom: 0;
           }
 
           .middle-left-visual {
@@ -605,7 +624,7 @@
         }
 
         @media (max-width: 420px) {
-          .middle-copy h2 {
+          .middle-copy-main h2 {
             font-size: 50px;
           }
 
