@@ -17,22 +17,22 @@ const highlights = [
   {
     icon: <FaLightbulb />,
     title: 'Innovative Solutions',
-    text: 'Cutting-edge app development & IT strategies',
+    text: 'Cutting-edge app development and IT strategies that keep your business ahead of the curve.',
   },
   {
     icon: <FaBullseye />,
     title: 'Tailored Approaches',
-    text: 'Customized services for maximum impact',
+    text: 'Customized services that align with your business objectives for maximum impact.',
   },
   {
     icon: <FaCog />,
     title: 'Holistic Services',
-    text: 'Marketing & tech support under over roof.',
+    text: 'From marketing to technical support, we cover every aspect of your digital journey.',
   },
   {
     icon: <FaChartLine />,
     title: 'Proven Results',
-    text: 'Delivering measurable growth, & high ROI',
+    text: 'We focus on driving measurable growth, with strategies that deliver high ROI',
   },
 ];
 
